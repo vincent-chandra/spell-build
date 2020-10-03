@@ -1,0 +1,900 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("blackwalpaper.jpg");
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.navbar img{
+    max-width: 10%;
+    width: auto;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: grey;
+}
+
+.navbar a:hover{
+    color: black;
+}
+
+hr{
+    border: 1px solid grey;
+    padding: 0;
+}
+
+footer{
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: black;
+}
+
+.detailFooter{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.kanan, .kiri{
+    margin: 0 20px 0 20px;
+    padding-bottom: 20px;
+}
+
+.kiri a{
+    color: white;
+}
+
+.menuPopup img{
+    width: 50px;
+    cursor: pointer;
+}
+
+.menuPopup{
+    background: rgba(255, 232, 189, 0.775);
+    width: 45px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    top: 70%;
+    z-index: 1;
+}
+
+.facebook img{
+    width: 60px;
+}
+
+.steam img{
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.discord img{
+    width: 100px;
+    margin-top: 10px;
+}
+
+.menuyangdiPop{
+    background: rgba(255, 255, 255, 0.583);
+    width: 200px;
+    position: fixed;
+    top: 62%;
+    z-index: 1001;
+    text-align: center;
+    padding: 20px;
+    display: none;
+    left: -300px;
+    -webkit-animation: slide 0.5s forwards;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0;}
+}
+
+@keyframes slide{
+    100% { left: 0;}
+}
+
+.closeIconMenuPop{
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    width: 20px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+
+/* CSS HOME */
+.contentImage img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.contentImage{
+    position: relative;
+    width: 100%;
+}
+
+.contentImage .buttonJoin{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttonJoin:hover{
+    opacity: 0.5;
+    background-color: black;
+}
+
+.contentHome{
+    color: white;
+    font-family: sans-serif;
+}
+
+.popupMain{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1001;
+}
+
+.popup{
+    color: white;
+    background: linear-gradient(to right, rgb(74, 145, 192), rgb(79, 197, 162));
+    background-size: cover;
+    width: 80vh;
+    height: 40vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 2px 5px 3px white;
+    text-align: center;
+}
+
+.closeIcon{
+    position: absolute;
+    top: 35%;
+    right: 15%;
+    width: 30px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.popup img{
+    width: 100px;
+}
+
+.headingPopup{
+    transform: translateY(60px);
+    margin-bottom: 100px;
+}
+
+/* CSS MEDIA */
+.judulMedia{
+    text-align: center;
+    color: white;
+}
+
+.gallery{
+    display: block;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.gallery img{
+    width: 400px;
+}
+
+.slideshow{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow .slides img{
+    width: 100%;
+}
+
+.slides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.circleDot{
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+/* CSS ABOUT US */
+.gameplay{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.gameplay img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.gauntlet{
+    color: white;
+    text-align: center;
+    background: rgb(255, 255, 255, 0.3);
+}
+
+.gauntlet1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gauntlet2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gauntlet3{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.isiHeader{
+    text-align: center;
+    background-color: rgb(226, 175, 79);
+}
+
+.isiHeader *{
+    margin: 0;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.gauntletType{
+    padding-bottom: 20px;
+}
+
+.gauntletType2{
+    text-align: center;
+    background-color: rgb(124, 61, 47);
+}
+
+.gauntletType2 *{
+    margin: 0;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.video{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+
+video{
+    width: 60%;
+    height: auto;
+}
+
+
+/* FROST GAUNTLET */
+.frostGauntlet{
+    border-collapse: collapse;
+    width: 40%;
+    height: 500px;
+    display: inline-table;
+    background: black;
+    text-align: center;
+    border: 3px solid #7af1f1;
+    margin: 20px;
+}
+
+.frostHeader th{
+    background: rgba(122, 241, 241, 0.20);
+    border: 0px solid black;
+    width: 12%;
+    column-span: all;
+}
+
+.spellFrost{
+    background: linear-gradient(to left, rgba(122, 241, 241, 0.70), rgba(122, 241,241, 0.9), rgba(122, 241, 241, 0.9), rgba(122, 241, 241, 0.70));
+    border: 1px solid black;
+    color: black;
+}
+
+.namaSpellFrost{
+    background: linear-gradient(to left, rgba(122, 241, 241, 0.70), rgba(122, 241,241, 0.9), rgba(122, 241, 241, 0.9), rgba(122, 241, 241, 0.70));
+    border: 1px solid black;
+    color: black;
+}
+
+/* ------------------------------------------------------------- */
+
+th img{
+    width: 50px;
+}
+
+td img{
+    width: 50px;
+}
+
+tr, td{
+    border: 1px solid black;
+    background: rgb(46, 45, 45);
+}
+
+/* ------------------------------------------------------------- */
+
+/* FIRE GAUNTLET */
+.fireGauntlet{
+    border-collapse: collapse;
+    width: 40%;
+    height: 500px;
+    display: inline-table;
+    background: black;
+    text-align: center;
+    border: 3px solid #fb7237;
+    margin: 20px;
+}
+
+.fireHeader th{
+    background: rgba(251, 114, 55, 0.20);
+    border: 0px solid black;
+    width: 12%;
+    column-span: all;
+}
+
+.spellFire{
+    background: linear-gradient(to left, rgba(251, 114, 55, 0.70), rgba(251, 114, 55, 0.95), rgba(251, 114, 55, 0.95), rgba(251, 114, 55, 0.70));
+    border: 1px solid black;
+    color: black;
+}
+
+.namaSpellFire{
+    background: linear-gradient(to left, rgba(251, 114, 55, 0.70), rgba(251, 114, 55, 0.95), rgba(251, 114, 55, 0.95), rgba(251, 114, 55, 0.70));
+    border: 1px solid black;
+    color: black;
+}
+
+
+/* LIGHTNING GAUNTLET */
+.lightningGauntlet{
+    border-collapse: collapse;
+    width: 40%;
+    height: 500px;
+    display: inline-table;
+    background: black;
+    text-align: center;
+    border: 3px solid #4169E1;
+    margin: 20px;
+}
+
+.lightningHeader th{
+    background: rgba(65, 105, 225, 0.20);
+    border: 0px solid black;
+    width: 12%;
+    column-span: all;
+}
+
+.spellLightning{
+    background: linear-gradient(to left, rgba(65, 105, 225, 0.70), rgba(65, 105, 225, 0.9), rgba(65, 105, 225, 0.9), rgba(65, 105, 225, 0.70));
+    border: 1px solid black;
+    color: black;
+}
+
+.namaSpellLightning{
+    background: linear-gradient(to left, rgba(65, 105, 225, 0.70), rgba(65, 105, 225, 0.9), rgba(65, 105, 225, 0.9), rgba(65, 105, 225, 0.70));
+    border: 1px solid black;
+    color: black;
+}
+
+
+/* TOXIC GAUNTLET */
+.toxicGauntlet{
+    border-collapse: collapse;
+    width: 40%;
+    height: 500px;
+    display: inline-table;
+    background: black;
+    text-align: center;
+    border: 3px solid #31ad23;
+    margin: 20px;
+}
+
+.toxicHeader th{
+    background: rgba(49, 173, 35, 0.20);
+    border: 0px solid black;
+    width: 12%;
+    column-span: all;
+}
+
+.spellToxic{
+    background: linear-gradient(to left, rgba(49, 173, 35, 0.70), rgba(49, 173, 35, 0.9), rgba(49, 173, 35, 0.9), rgba(49, 173, 35, 0.70));
+    border: 1px solid black;
+    color: black;
+}
+
+.namaSpellToxic{
+    background: linear-gradient(to left, rgba(49, 173, 35, 0.70), rgba(49, 173, 35, 0.9), rgba(49, 173, 35, 0.9), rgba(49, 173, 35, 0.70));
+    border: 1px solid black;
+    color: black;
+}
+
+/* STONE GAUNTLET */
+.stoneGauntlet{
+    border-collapse: collapse;
+    width: 40%;
+    height: 500px;
+    display: inline-table;
+    background: black;
+    text-align: center;
+    border: 3px solid #b35900;
+    margin: 20px;
+}
+
+.stoneHeader th{
+    background: rgba(179, 89, 0, 0.20);
+    border: 0px solid black;
+    width: 12%;
+    column-span: all;
+}
+
+.spellStone{
+    background: linear-gradient(to left, rgba(179, 89, 0, 0.70), rgba(179, 89, 0, 0.9), rgba(179, 89, 0, 0.9), rgba(179, 89, 0, 0.70));
+    border: 1px solid black;
+    color: black;
+}
+
+.namaSpellStone{
+    background: linear-gradient(to left, rgba(179, 89, 0, 0.70), rgba(179, 89, 0, 0.9), rgba(179, 89, 0, 0.9), rgba(179, 89, 0, 0.70));
+    border: 1px solid black;
+    color: black;
+}
+
+/* WIND GAUNTLET */
+.windGauntlet{
+    border-collapse: collapse;
+    width: 40%;
+    height: 500px;
+    display: inline-table;
+    background: black;
+    text-align: center;
+    border: 3px solid #e6deb2;
+    margin: 20px;
+}
+
+.windHeader th{
+    background: rgba(230, 222, 178, 0.20);
+    border: 0px solid black;
+    width: 12%;
+    column-span: all;
+}
+
+.spellWind{
+    background: linear-gradient(to left, rgba(230, 222, 178, 0.70), rgba(230, 222, 178, 0.9), rgba(230, 222, 178, 0.9), rgba(230, 222, 178, 0.70));
+    border: 1px solid black;
+    color: black;
+}
+
+.namaSpellWind{
+    background: linear-gradient(to left, rgba(230, 222, 178, 0.70), rgba(230, 222, 178, 0.9), rgba(230, 222, 178, 0.9), rgba(230, 222, 178, 0.70));
+    border: 1px solid black;
+    color: black;
+}
+
+
+/* CSS FOR BUY PAGE */
+
+.contentBuy{
+    background-color: rgb(97, 146, 220);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 50vh;
+}
+
+.centerDiv{
+    justify-content: center;
+}
+
+.centerDiv h1{
+    font-size: 40px;
+    background: linear-gradient(to right, rgb(255, 215, 142), rgb(255, 205, 112));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px black;
+}
+
+.platform img{
+    width: 200px;
+}
+
+.windows,.ps4{
+    margin: 0 20px 0 20px;
+}
+
+/* CSS FOR PC & PS4 PLATFORM */
+
+.formBuy{
+    background: url("background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.formBeli{
+    background: rgb(97, 146, 220);
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 30px;
+}
+
+.garisBuy{
+    width: 50%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgb(255, 255, 255), rgba(255, 255, 255, 0.5));
+    height: 5px;
+    border: none;
+}
+
+.radioButton{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    margin: 10px auto;
+    color: white
+}
+
+.inputAttribAddress{
+    margin: 15px 0 0 0;
+}
+
+.inputAttribAddress textarea{
+    resize: none;
+    background: none;
+    border: 2px solid rgb(226, 175, 79);
+}
+
+.inputAttribCheck{
+    margin: 10px 0 0 0;
+    color: white;
+}
+
+#btnConfirm,#btnReset{
+    margin: 10px 0 0 10px;
+    font-size: 16px;
+    width: 150px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+::placeholder{
+    color: white;
+}
+
+.inputAttrib input{
+    width: 300px;
+    margin: 10px 0 0 0 ;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid rgb(226, 175, 79);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+}
+
+#errorMessage{
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* CSS FORUM COMMUNITY */
+
+.container{
+    background-color: lightgrey;
+    padding-top: 20px;
+    padding-bottom:100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.forumContent h1{
+    
+    padding-top: 5px;
+    margin-left: 30px;
+}
+
+.forumContent h3{
+    padding-top: 15px ;
+    padding-left: 10px;
+    margin-bottom: 90px;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+    background: white;
+    width: 93%;
+    height: auto;
+   
+}
+
+.forumContent h2{
+    margin-left:40px;
+}
+
+
+.viewThreadButton{
+    margin-top:-80px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    float:right;
+    height: 50px;
+    width: 150px;
+    font-weight: bolder;
+    font-size: 14pt;
+}
+
+.pageNumb{
+    text-align: right;
+    margin-right: 30px;
+}
+
+.createForumButton{
+    float:right;
+    margin-top:-80px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    background-color:  lightblue;
+    font-weight:bolder;
+    height: 50px;
+    width: 150px;
+    font-size:14pt;
+}
+
+.newThreadContent h1{
+    text-align: center;
+}
+
+.newThreadContent h2{
+    margin-bottom:0px;
+    margin-left:30px;
+}
+
+.inputUsername{
+    margin-left:30px;
+    width: 1000px;
+    height:40px;
+    font-size:14pt;
+    text-align: left;
+}
+
+.inputThreadTitle{
+   
+    margin-left:30px;
+    width: 1000px;
+    height:40px;
+    font-size:14pt;
+    text-align: left;
+}
+
+.inputThreadContent{
+    text-align: left;
+    padding-bottom:160px;
+    margin-left:30px;
+    margin-bottom:30px;
+    width: 1000px;
+    height:200px;
+    font-size:14pt;
+    resize:none;
+   
+}
+
+.createThreadButton{
+    float:left;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    background-color:  lightblue;
+    font-weight:bolder;
+    height: 50px;
+    width: 150px;
+    font-size:14pt;
+}
+
+.thread1Content{
+    padding-top: 15px ;
+    padding-left: 10px;
+    
+    margin-top: 30px;
+    margin-left: 30px;
+    
+    background: lightgray;
+    width: 1850px;
+    height:500px;
+    font-size: 20pt;
+}
+
+.thread1Content h4{
+    font-size: 16pt;
+}
+
+.replyThreadButton{
+    float: right;
+    margin-right: 40px;
+    margin-top: 70px;
+    font-weight:bolder;
+    height: 50px;
+    width: 150px;
+    font-size:14pt;
+
+}
+
+.thread2Content{
+    padding-top: 15px ;
+    padding-left: 10px;
+    
+    margin-top: 30px;
+    margin-left: 30px;
+    
+    background: lightgray;
+    width: 1850px;
+    height:500px;
+    font-size: 20pt;
+}
+
+.thread2Content h4{
+    font-size: 16pt;
+}
+
+.thread3Content{
+    padding-top: 15px ;
+    padding-left: 10px;
+    
+    margin-top: 30px;
+    margin-left: 30px;
+    
+    background: lightgray;
+    width: 1850px;
+    height:500px;
+    font-size: 20pt;
+}
+
+.thread3Content h4{
+    font-size: 16pt;
+}
+
+.thread4Content{
+    padding-top: 15px ;
+    padding-left: 10px;
+    
+    margin-top: 30px;
+    margin-left: 30px;
+    
+    background: lightgray;
+    width: 1850px;
+    height:500px;
+    font-size: 20pt;
+}
+
+.thread4Content h4{
+    font-size: 16pt;
+}
+
+.thread5Content{
+    padding-top: 15px ;
+    padding-left: 10px;
+    
+    margin-top: 30px;
+    margin-left: 30px;
+    
+    background: lightgray;
+    width: 1850px;
+    height:500px;
+    font-size: 20pt;
+}
+
+.thread5Content h4{
+    font-size: 16pt;
+}

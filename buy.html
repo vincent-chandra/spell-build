@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spellbuild | Community</title>
+    <link rel="stylesheet" href="design.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div class="menuPopup" id="menuPopup">
+        <img onclick="menuPopup()" src="rightkey.svg" alt="right key">
+    </div>
+
+    <div class="menuyangdiPop" id="menuyangdiPop">
+        <div class="steam">
+            <a href="https://store.steampowered.com/"><img src="steamlogo.png" alt="steam"></a>
+        </div>
+
+        <div class="facebook">
+            <a href="https://www.facebook.com/"><img src="facebooklogo.png" alt="facebook"></a>
+        </div>
+        
+        <div class="discord">
+            <a href="https://discord.com/"><img src="discordlogo.svg" alt="discord"></a>
+        </div>
+        <img onclick="buttonClickedMenuPop()" class="closeIconMenuPop" src="closeIcon.png" alt="closeIcon">
+    </div>
+
+    <div class="navbar">
+        <img src="Favicon2.png" alt="">
+        <a href="index.html">Home</a>
+        <a href="media.html">Media</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="community.html">Community</a>
+        <a href="buy.html">Buy</a>
+    </div>
+
+    <hr>
+
+    <div class="contentBuy">
+        <div class="centerDiv">
+            <h1>Choose Your Platform To Play</h1>
+
+            <div class="platform">
+                <a class="windows" href="pcplatform.html"><img src="windows.png" alt=""></a>
+                <a class="ps4" href="ps4platform.html"><img src="ps4.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2020 Spellbuild, Inc. All rights reserved | spellbuild.official@example.com </p>
+        
+        <div class="detailFooter">
+            <div class="kiri">
+                <a href="#"><p>Terms of Service</p></a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="kanan">
+                <p>Bina Nusantara University Jakarta, Indonesia
+                </p>
+                <p>Vincent 2201771242 <br> Febrio Evan H 2201771002</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function menuPopup(){
+            document.getElementById("menuyangdiPop").style.display = "block";
+            document.getElementById("menuPopup").style.display = "none";
+        }
+
+        function buttonClickedMenuPop(){
+            document.getElementById("menuyangdiPop").style.display = "none";
+            document.getElementById("menuPopup").style.display = "";
+        }
+    </script>
+
+</body>
+</html>

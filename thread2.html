@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spellbuild | Community</title>
+    <link rel="stylesheet" href="design.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div class="menuPopup" id="menuPopup">
+        <img onclick="menuPopup()" src="rightkey.svg" alt="right key">
+    </div>
+
+    <div class="menuyangdiPop" id="menuyangdiPop">
+        <div class="steam">
+            <a href="https://store.steampowered.com/"><img src="steamlogo.png" alt="steam"></a>
+        </div>
+
+        <div class="facebook">
+            <a href="https://www.facebook.com/"><img src="facebooklogo.png" alt="facebook"></a>
+        </div>
+        
+        <div class="discord">
+            <a href="https://discord.com/"><img src="discordlogo.svg" alt="discord"></a>
+        </div>
+        <img onclick="buttonClickedMenuPop()" class="closeIconMenuPop" src="closeIcon.png" alt="closeIcon">
+    </div>
+
+    <div class="navbar">
+        <img src="Favicon2.png" alt="">
+        <a href="index.html">Home</a>
+        <a href="media.html">Media</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="community.html">Community</a>
+        <a href="buy.html">Buy</a>
+    </div>
+
+    <hr>
+
+    <div class="threadContainer">
+        <div class="thread2Content">
+          <h3>Online Tournament!</h3>
+          <h4><br>  Thread By : <i>offpanda</i> <br>
+            3 June 2020 <br>
+          <br>Hi guys! I'm here to announce that there will be a tournament where teams can compete that will be held online on the 15th of June 2020 and if you are looking to find sign your team up for the tournament, you can head straight to egl-esports.com and the tournament should be on the first page of the website! There is a $50,000 prize pool for the 1st place winner and $25,000 prize pool for the 2nd place and the 3rd place will get luxurious in game items as a souvernier! I wish you the best of luck and if you have any questions regarding the tournament feel free to ask me!
+          <br> 
+        </h4>
+
+        <button type="button" class="replyThreadButton">Reply</button>
+        
+        </div>
+            
+        
+    </div>
+    <footer>
+        <p>Copyright to SpellBuild &copy; 2020 | spellbuild.official@example.com </p>
+    </footer>
+
+    <script>
+        function menuPopup(){
+            document.getElementById("menuyangdiPop").style.display = "block";
+            document.getElementById("menuPopup").style.display = "none";
+        }
+
+        function buttonClickedMenuPop(){
+            document.getElementById("menuyangdiPop").style.display = "none";
+            document.getElementById("menuPopup").style.display = "";
+        }
+
+    </script>
+
+</body>
+</html>

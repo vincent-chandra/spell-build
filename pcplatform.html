@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spellbuild | Community</title>
+    <link rel="stylesheet" href="design.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div class="menuPopup" id="menuPopup">
+        <img onclick="menuPopup()" src="rightkey.svg" alt="right key">
+    </div>
+
+    <div class="menuyangdiPop" id="menuyangdiPop">
+        <div class="steam">
+            <a href="https://store.steampowered.com/"><img src="steamlogo.png" alt="steam"></a>
+        </div>
+
+        <div class="facebook">
+            <a href="https://www.facebook.com/"><img src="facebooklogo.png" alt="facebook"></a>
+        </div>
+        
+        <div class="discord">
+            <a href="https://discord.com/"><img src="discordlogo.svg" alt="discord"></a>
+        </div>
+        <img onclick="buttonClickedMenuPop()" class="closeIconMenuPop" src="closeIcon.png" alt="closeIcon">
+    </div>
+
+    <div class="navbar">
+        <img src="Favicon2.png" alt="">
+        <a href="index.html">Home</a>
+        <a href="media.html">Media</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="community.html">Community</a>
+        <a href="buy.html">Buy</a>
+    </div>
+
+    <hr>
+
+    <div class="formBuy">
+        <form action="" class="formBeli" id="formBeli">
+            <h1>JOIN THE BATTLE NOW</h1>
+            <hr class="garisBuy">
+            
+            <div class="inputAttrib">
+                <input type="text" placeholder="Full Name" id="fullName">
+            </div>
+
+            <div class="inputAttrib">
+                <input type="text" placeholder="Email" id="email">
+            </div>
+
+            <div class="inputAttrib">
+                <input type="text" placeholder="Username" id="username">
+            </div>
+
+            <div class="inputAttrib">
+                <input type="password" placeholder="Password" id="password">
+            </div>
+
+            <div class="inputAttrib">
+                <input type="password" placeholder="Confirm Password" id="confirmPassword">
+            </div>
+
+            <div class="radioButton">
+                <div class="inputAttribRadio">
+                    <input type="radio" id="radioMale" name="gender"><label for="radioMale">Male</label>
+                </div>
+    
+                <div class="inputAttribRadio">
+                    <input type="radio" id="radioFemale" name="gender"><label for="radioFemale">Female</label>
+                </div>
+            </div>
+
+            <div class="inputAttrib">
+                <input type="number" placeholder="Quantity" id="quantity" min="1">
+            </div>
+
+            <div class="inputAttribAddress">
+                <textarea name="" id="address" cols="40" rows="5" placeholder="Address"></textarea>
+            </div>
+
+            <div class="inputAttribCheck">
+                <input type="checkbox" id="checkbox"><label for="checkbox">I Agree With SpellBuild T&C</label>
+            </div>
+
+            <p id="errorMessage"></p>
+
+            <button type="button" id="btnConfirm">Buy</button>
+            <button type="reset" id="btnReset">Reset</button>
+            <!-- <input type="button" id="buttonSubmit" value="Buy"> -->
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2020 Spellbuild, Inc. All rights reserved | spellbuild.official@example.com </p>
+        
+        <div class="detailFooter">
+            <div class="kiri">
+                <a href="#"><p>Terms of Service</p></a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="kanan">
+                <p>Bina Nusantara University Jakarta, Indonesia
+                </p>
+                <p>Vincent 2201771242 <br> Febrio Evan H 2201771002</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="scriptvalidasi.js"></script>
+
+    <script>
+        function menuPopup(){
+            document.getElementById("menuyangdiPop").style.display = "block";
+            document.getElementById("menuPopup").style.display = "none";
+        }
+
+        function buttonClickedMenuPop(){
+            document.getElementById("menuyangdiPop").style.display = "none";
+            document.getElementById("menuPopup").style.display = "";
+        }
+    </script>
+
+</body>
+</html>

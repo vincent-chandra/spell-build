@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spellbuild | Community</title>
+    <link rel="stylesheet" href="design.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div class="menuPopup" id="menuPopup">
+        <img onclick="menuPopup()" src="rightkey.svg" alt="right key">
+    </div>
+
+    <div class="menuyangdiPop" id="menuyangdiPop">
+        <div class="steam">
+            <a href="https://store.steampowered.com/"><img src="steamlogo.png" alt="steam"></a>
+        </div>
+
+        <div class="facebook">
+            <a href="https://www.facebook.com/"><img src="facebooklogo.png" alt="facebook"></a>
+        </div>
+        
+        <div class="discord">
+            <a href="https://discord.com/"><img src="discordlogo.svg" alt="discord"></a>
+        </div>
+        <img onclick="buttonClickedMenuPop()" class="closeIconMenuPop" src="closeIcon.png" alt="closeIcon">
+    </div>
+
+    <div class="navbar">
+        <img src="Favicon2.png" alt="">
+        <a href="index.html">Home</a>
+        <a href="media.html">Media</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="community.html">Community</a>
+        <a href="buy.html">Buy</a>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="newThreadContent">
+          <h1>Create New Thread</h1>
+
+          <h2>Input Username</h2>
+
+          <input type="text" class="inputUsername" id="newThreadUsername">
+
+          <h2>Thread Title</h2>
+
+          <input type="text" class="inputThreadTitle" id="newThreadTitle">
+
+            <h2>Thread Content</h2>
+
+            <textarea class="inputThreadContent" id="newThreadContent"></textarea>    
+            
+           
+        </div>
+            
+        <a href="community.html"><button type="button" class="createThreadButton" onclick=addNewThread()>Create Thread</button></a>
+        
+    </div>
+
+    <footer>
+        <p>Copyright to SpellBuild &copy; 2020 | spellbuild.official@example.com </p>
+    </footer>
+
+    <script>
+        function menuPopup(){
+            document.getElementById("menuyangdiPop").style.display = "block";
+            document.getElementById("menuPopup").style.display = "none";
+        }
+
+        function buttonClickedMenuPop(){
+            document.getElementById("menuyangdiPop").style.display = "none";
+            document.getElementById("menuPopup").style.display = "";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spellbuild | Community</title>
+    <link rel="stylesheet" href="design.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div class="menuPopup" id="menuPopup">
+        <img onclick="menuPopup()" src="rightkey.svg" alt="right key">
+    </div>
+
+    <div class="menuyangdiPop" id="menuyangdiPop">
+        <div class="steam">
+            <a href="https://store.steampowered.com/"><img src="steamlogo.png" alt="steam"></a>
+        </div>
+
+        <div class="facebook">
+            <a href="https://www.facebook.com/"><img src="facebooklogo.png" alt="facebook"></a>
+        </div>
+        
+        <div class="discord">
+            <a href="https://discord.com/"><img src="discordlogo.svg" alt="discord"></a>
+        </div>
+        <img onclick="buttonClickedMenuPop()" class="closeIconMenuPop" src="closeIcon.png" alt="closeIcon">
+    </div>
+
+    <div class="navbar">
+        <img src="Favicon2.png" alt="">
+        <a href="index.html">Home</a>
+        <a href="media.html">Media</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="community.html">Community</a>
+        <a href="buy.html">Buy</a>
+    </div>
+
+    <hr>
+
+    <div class="threadContainer">
+        <div class="thread1Content">
+          <h3>Server Maintenance?</h3>
+          <h4><br>  Thread By : <i>nEcR0MasTeRy14</i> <br>
+            1 June 2020 <br>
+          <br>Is the server currently down? I have been trying to connect to the server and I can't seem to connect at all and it has been a couple of hours that i have waited and I still can't seem to connect? I am just really bored during these quarantine times and this game really help me get rid of that boredom. Need to know if I'm the only one having this problem!
+          <br> Also if anyone is looking for a friend to play, I am completely free to play a lot of the times, just look up my in game name: nEcR0MasTeRy14 in game and hit me up with a friend request! :)
+        </h4>
+
+        <button type="button" class="replyThreadButton">Reply</button>
+        
+        </div>
+            
+        
+    </div>
+
+    <footer>
+        <p>Copyright to SpellBuild &copy; 2020 | spellbuild.official@example.com </p>
+    </footer>
+
+    <script>
+        function menuPopup(){
+            document.getElementById("menuyangdiPop").style.display = "block";
+            document.getElementById("menuPopup").style.display = "none";
+        }
+
+        function buttonClickedMenuPop(){
+            document.getElementById("menuyangdiPop").style.display = "none";
+            document.getElementById("menuPopup").style.display = "";
+        }
+
+    </script>
+
+</body>
+</html>
